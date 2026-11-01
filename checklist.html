@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Packing Checklist - PackMate</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h2>PackMate</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trip.html">Create Trip</a></li>
+                <li><a href="checklist.html">Checklist</a></li>
+                <li><a href="mytrips.html">My Trips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Checklist Section -->
+    <main>
+
+        <section class="checklist-section">
+
+            <h1>Your Packing Checklist</h1>
+
+            <p>Don't forget anything before your journey!</p>
+
+            <!-- Add Item Form -->
+            <div class="add-item">
+
+                <input type="text" id="itemInput"
+                    placeholder="Enter an item to pack">
+
+                <button type="button" id="addButton">
+                    Add Item
+                </button>
+
+            </div>
+
+            <!-- Packing Categories -->
+            <div class="packing-list">
+
+                <h2>Travel Essentials</h2>
+
+                <ul id="itemList">
+
+                    <li>
+                        <input type="checkbox">
+                        <span>Clothes</span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox">
+                        <span>Toothbrush</span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox">
+                        <span>Mobile Charger</span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox">
+                        <span>Wallet</span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox">
+                        <span>Identity Card</span>
+                    </li>
+
+                    <li>
+                        <input type="checkbox">
+                        <span>Headphones</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Progress Section -->
+            <div class="progress-section">
+
+                <h3>Packing Progress</h3>
+
+                <p id="progressText">0% Completed</p>
+
+                <progress id="packingProgress"
+                    value="0" max="100">
+                </progress>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 PackMate. Travel Without Worries.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</body>
+</html>

@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Trip - PackMate</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h2>PackMate</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trip.html">Create Trip</a></li>
+                <li><a href="checklist.html">Checklist</a></li>
+                <li><a href="mytrips.html">My Trips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Create Trip Section -->
+    <main>
+
+        <section class="trip-section">
+
+            <h1>Plan Your Next Adventure!</h1>
+
+            <p>Enter your trip details to get started.</p>
+
+            <form id="tripForm">
+
+                <label for="tripName">Trip Name</label>
+                <input type="text" id="tripName"
+                    placeholder="Example: Summer Vacation" required>
+
+                <label for="destination">Destination</label>
+                <input type="text" id="destination"
+                    placeholder="Where are you going?" required>
+
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" required>
+
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" required>
+
+                <label for="travelType">Type of Trip</label>
+
+                <select id="travelType" required>
+                    <option value="">Select Trip Type</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Family Vacation">Family Vacation</option>
+                    <option value="Solo Trip">Solo Trip</option>
+                    <option value="Business Trip">Business Trip</option>
+                    <option value="Friends Trip">Friends Trip</option>
+                </select>
+
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes"
+                    placeholder="Any special things to remember?"></textarea>
+
+                <button type="submit">Create My Trip</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 PackMate. Travel Without Worries.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</body>
+</html>
